@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header header header header header header'
+    'nav1 nav1 nav1 nav1 nav2 nav2 nav2 nav2 nav3 nav3 nav3 nav3'
+    'quote quote quote quote quote quote quote quote picture picture picture picture'
+    'section1 section1 section1 section1 section2 section2 section2 section2 section3 section3 section3 section3'
+    'tag1 tag1 tag1 tag2 tag2 tag2 tag3 tag3 tag3 tag4 tag4 tag4'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+  /*height: 100vh;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;*/
+  grid-gap: 2rem;
+  background-color: #ffffff;
+  padding: 0px;
+}
+
+header{
+    grid-area: header;
+    font-size: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #6e8f3d;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav1{
+    grid-area: nav1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ef7f21;
+    text-align: center;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.nav2{
+    grid-area: nav2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ef7f21;
+    border-radius: 2rem;
+}
+
+.nav3{
+    grid-area: nav3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ef7f21;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+
+.quote {
+    grid-area: quote;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background-color: #dd4124;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.picture {
+    grid-area: picture;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #6e8f3d;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.section1 {
+    background-color: #ef7f21;
+    grid-area: section1;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.section2 {
+    background-color: #ef7f21;
+    grid-area: section2;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    border-radius: 2rem;
+}
+
+.section3 {
+    background-color: #ef7f21;
+    grid-area: section3;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.tag1 {
+    grid-area: tag1;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    background-color: #638f3d;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.tag2 {
+    grid-area: tag2;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    background-color: #638f3d;
+    border-radius: 2rem;
+}
+
+.tag3 {
+    grid-area: tag3;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    background-color: #638f3d;
+    border-radius: 2rem;
+}
+
+.tag4 {
+    grid-area: tag4;
+    text-align: center;
+    padding: 20px;
+    font-size: 30;
+    background-color: #638f3d;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ef7f21;
+    padding: 20px;
+    font-size: 30;
+}
+
+#logo{
+    min-width: 100px;
+    padding-right: 1rem;
+}
+
+.tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.tile:hover{
+    background-color: #6e8f3d;
+    transition: 0.25s background-color;
+}
+
+.recipe{
+    width: 90%;
+    box-shadow: 0px 0px 4px 0px #333333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+    padding-top: 4%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 0px 4px 0px #333333;
+}
+
+th{
+    text-align: center;
+    background-color: #6e8f3d;
+}
+
+td{
+    text-align: left;
+    border: none;
+}
+
+.quantity{
+    text-align: right;
+}
+
+tr:nth-child(even){
+    background-color: #dd4124;
+}
+
+figcaption{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.recipeButton{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    background-color: #6e8f3d;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 2%;
+    box-shadow: 0px 0px 4px 0px #333333;
+    border-radius: 2rem;
+}
+
+.recipeButton:hover{
+    background-color: #5d7e2c;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+.tag1:hover{
+    background-color: #00a0dc;
+    transition: 0.25s background-color;
+}
+
+.tag2:hover{
+    background-color: #4668b3;
+    transition: 0.25s background-color;
+}
+
+.tag3:hover{
+    background-color: #c13584;
+    transition: 0.25s background-color;
+}
+
+.tag4:hover{
+    background-color: #d94348;
+    transition: 0.25s background-color;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      'header'
+      'nav1'
+      'nav2'
+      'nav3'
+      'quote'
+      'picture'
+      'section1'
+      'section2'
+      'section3'
+      'tag1'
+      'tag2'
+      'tag3'
+      'tag4'
+      'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: auto minmax(75px, auto) 1fr minmax(75px, auto) auto;
+  }
+  .nav1, .nav2, .nav3, .quote, .picture, .section1, .section2, .section3{
+      border-radius: 0;
+  }
+  .tag1, .tag2, .tag3, .tag4{
+      border-radius: 0;
+  }
+}

@@ -1,0 +1,207 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #222222;
+}
+
+.navbar-protector{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+}
+
+.navbar{
+    padding: 0.6rem;
+    background-color: #e7e7e7;
+}
+
+.itproject{
+    color: #ffcc00;
+    font-size: 1.5rem;
+}
+
+.navbar-nav li{
+    padding-right: 6px;
+}
+
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    left: 0;
+
+}
+
+.carousel-caption h1{
+    text-shadow: 1px 1px 15px #000000;
+    transform: translateY(-20%);
+}
+
+.carousel-caption h2{
+    text-shadow: 1px 1px 15px #000000;
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+
+.welcome{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr{
+    border-top: 2px solid #222222;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-code{
+    color: #e54d26;
+}
+
+.fa-js{
+    color: #ffd633;
+}
+
+.fa-css3{
+    color: #2163af;
+}
+
+.fa-code, .fa-js, .fa-css3{
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.fa-window-maximize, .fa-mobile, .fa-rocket, .fa-users{
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+.social a{
+    font-size: 4.5em;
+    padding: 3rem;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-google-plus{
+    color: #dd4b39;
+}
+
+.fa-instagram{
+    color: #c13584;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.fa-facebook:hover, .fa-google-plus:hover, .fa-instagram:hover, .fa-linkedin:hover{
+    color: #828282;
+}
+
+footer{
+    background-color: #e7e7e7;
+    color: #222222;
+    padding-top: 2rem;
+}
+
+hr.light{
+    border-top: 1px solid #222222;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+    .social a{
+        font-size: 4rem;
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-caption h1{
+        font-size: 350%;
+        transform: translateY(-20%);
+    }
+
+    .carousel-caption h2{
+        font-size: 260%;
+        transform: translateY(-20%);
+    }
+
+    .display-4{
+        font-size: 200%;
+    }
+
+    .row h3{
+        font-size: 120%;
+    }
+
+    .social a{
+        font-size: 3rem;
+        padding: 1.2rem;
+    }
+
+}
+@media (max-width: 576px) {
+    .carousel-caption h1{
+        font-size: 250%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-caption h2{
+        font-size: 180%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    .display-4{
+        font-size: 160%;
+    }
+
+    .social a{
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
+}
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
