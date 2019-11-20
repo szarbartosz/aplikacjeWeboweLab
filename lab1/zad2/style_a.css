@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.item1 { grid-area: one;}
+.item2 { grid-area: two; height: 200px;}
+.item3 { grid-area: three; }
+.item4 { grid-area: four; }
+.item5 { grid-area: five; }
+.item6 { grid-area: six; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'one two two'
+    'three two two'
+    'three . four'
+    'three five six';
+  grid-gap: 4px;
+  background-color: #888888;
+  padding: 6px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}

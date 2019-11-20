@@ -1,0 +1,129 @@
+header{
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    height: 40px;
+    background-color: yellow;
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#paragraph1{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+    background-color: #ff0000
+}
+
+#paragraph2{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    background-color: #00ff00;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#paragraph3{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 18px;
+    background-color: #0000ff;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    overflow: auto;
+}
+
+#paragraph4{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    background-color: #f0ff0f;
+}
+
+#p1{
+    height: 180px;
+    width: 600px;
+    background-color: #888888;
+    margin: auto;
+    padding: 50px;
+}
+
+#table1{
+    margin: auto;
+}
+
+#heading{
+    height: 60px;
+    background-color: #8888ff;
+}
+
+#row{
+    height: 40px;
+}
+
+#dataCell{
+    background-color: #ddddff;
+    width: 100px;
+    text-align: center;
+}
+
+#dataCellEven{
+    background-color: #bbbbff;
+    width: 100px;
+    text-align: center;
+}
+
+#table2{
+    width: 100%;
+    background-color: black;
+}
+
+#heading2{
+    background-color: #888888;
+    height: 50px;
+}
+
+#dataCell2{
+    background-color: #bbbbbb;
+    text-align: center;
+    height: 30px;
+}
+
+.mainParagraph{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#jpg1{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+#jpg2{
+    float: right;
+    padding-left: 20px;
+}
+
+#eu{
+    width: 50%;
+    height: 150px;
+    float: left;
+    background-color: blue;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#asia{
+    width: 50%;
+    height: 150px;
+    float: left;
+    background-color: red;
+    text-align: center;
+    list-style-position: inside;
+}
