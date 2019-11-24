@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.squareButton{
+    text-align: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.sthButtonOdd{
+    text-align: center;
+    padding: 40px 40px;
+    background-color: #dddddd;
+}
+
+.sthButton{
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.square1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #0000ff;
+    width: 32rem;
+    height: 32rem;
+    position: absolute;
+    left: auto;
+    top: 20px;
+    z-index: 1;
+}
+
+.square2{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #ff0000;
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    left: auto;
+    top: 90px;
+    z-index: 2;
+}
+
+.square3{
+    margin: auto;
+    background-color: #ffff00;
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    left: auto;
+    top: 160px;
+    z-index: 3;
+}
+
+.square4{
+    margin: auto;
+    background-color: #ffff00;
+    width: 12rem;
+    height: 12rem;
+}

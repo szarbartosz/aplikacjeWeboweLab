@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="DESCRIPTION"/>
+        <meta name="keywords" content="KEYWORDS"/>
+        <title>kwadraty.js</title>
+        <link rel="shortcut icon" href="img/###.png"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="squareButton">
+            <div class="square1" onclick="document.getElementById('info').innerHTML = 'nacisnąłeś niebieski kwadrat o wartości 1'; sumFunc(1)"></div>
+            <div class="square2" onclick="document.getElementById('info').innerHTML = 'nacisnąłeś czerwony kwadrat o wartości 2'; sumFunc(2)"></div>
+            <div class="square3" onclick="document.getElementById('info').innerHTML = 'nacisnąłeś żółty kwadrat o wartości 5'; sumFunc(5)"></div>
+            <p id='info' style="position: absolute; left: auto; top: 560px;""></p>
+            <p id='counter' style="position: absolute; left: auto; top: 600px;"></p>
+            <button type="button" style="position: absolute; left: auto; top: 660px;" onclick="resetFunc()">
+                    resetuj sumę
+            </button>
+        </div>
+
+        <div class="sthButtonOdd">
+            <button type="button" onclick="document.getElementById('demo').style.display='block'; document.getElementById('demo').innerHTML = Date()">
+                kliknij by wyświetlić datę i godzinę
+            </button>
+            <button type="button" onclick="document.getElementById('demo').style.display='none'">
+                kliknij by schować datę i godzinę
+            </button>
+            <p id="demo"></p>
+        </div>
+        <div class="sthButton">
+            <button type="button" onclick="document.getElementById('lightbulb').src='img/pic_bulbon.gif'">
+                zapal żarówkę
+            </button>
+            <img id="lightbulb" src="img/pic_bulboff.gif" style="width: 100px">
+            <button type="button" onclick="document.getElementById('lightbulb').src='img/pic_bulboff.gif'">
+                zgaś żarówkę
+            </button>
+        </div>
+        <div class="sthButtonOdd">
+            <button type="button" onclick="document.getElementById('text').style.fontSize='32px'">
+                kliknij by powiększyć tekst 'JavaScript'
+            </button>
+            <p id='text'>JavaScript</p>
+        </div>
+        <div class="sthButton">
+            <button type="button" onclick="my1stFunc()">
+                kliknij by wyświetlić nazwę najlepszego warsztatu samochodowego w Krakowie
+            </button>
+            <p id='autonalepa'></p>
+        </div>
+        <div class="sthButtonOdd">
+            <button type="button" onclick="getElementById('alertbox').innerHTML = 'kłamiesz'">
+                kliknij jeżeli uważasz, że AUTO NALEPA nie jest najlepszym warsztatem samochodowym w Krakowie
+            </button>
+            <p id='alertbox'></p>
+        </div>
+        <div class="sthButton">
+                <button type="button" onclick="my2ndFunc()">
+                    kliknij by zmienic poniższe zdanie na poprawne
+                </button>
+                <p>AUTO NALEPA <span id='blad1'>nie</span> jest najlepszym warsztatem samochodowym w <span id='blad2'>Warszawie</span></p>
+        </div>     
+
+        <script>
+            var globalSum = 0;
+            function sumFunc(a){
+                globalSum += a;
+                document.getElementById('counter').innerHTML = "łączna suma: " + globalSum;
+            }
+            function resetFunc(){
+                globalSum = 0;
+                document.getElementById('counter').innerHTML = "łączna suma: " + globalSum;
+            }
+            function my1stFunc(){
+                document.getElementById('autonalepa').innerHTML = "AUTO NALEPA";
+            }
+            function my2ndFunc(){
+                document.getElementById('blad1').innerHTML = "";
+                document.getElementById('blad2').innerHTML = "Krakowie";
+            }
+        </script>
+  </body>
+
+</html>
