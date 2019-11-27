@@ -1,0 +1,7 @@
+1)routing
+2)autentykacja -> firebase
+3)autoryzacja (admin/zwykly user) - opcjonalne, napisanie wlasnego serwera
+
+po kliknieciu na kurs wyswietla sie karta szczegolowa:
+-przycisk zapisz sie
+-przycisk oceny - oceniac moga studenci zapisani na kurs (jednorazowo)
